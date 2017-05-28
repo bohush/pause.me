@@ -27,6 +27,7 @@ namespace PauseMe
             this.WindowState = FormWindowState.Maximized;
             this.DoubleBuffered = true;
 
+            lblShortcut.Text = "Ctrl + left click to resume";
             _updateCountdownLabel = (timer) => lblCountdown.Text = "Pause time: " + (new TimeSpan(0, 0, ((int)_settings.PauseTime.TotalSeconds) - timer)).ToShortString();
             _updateCountdownLabel(_CountDownTimer++);
 

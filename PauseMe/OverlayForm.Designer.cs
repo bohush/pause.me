@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.lblCountdown = new System.Windows.Forms.Label();
             this.tmrCountdown = new System.Windows.Forms.Timer(this.components);
+            this.lblShortcut = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCountdown
@@ -44,18 +45,30 @@
             this.lblCountdown.Text = "Countdown Timer";
             this.lblCountdown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCountdown.Click += new System.EventHandler(this.lblCountdown_Click);
-
             // 
             // tmrCountdown
             // 
             this.tmrCountdown.Interval = 1000;
             this.tmrCountdown.Tick += new System.EventHandler(this.tmrCountdown_Tick);
             // 
+            // lblShortcut
+            // 
+            this.lblShortcut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblShortcut.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShortcut.ForeColor = System.Drawing.Color.Red;
+            this.lblShortcut.Location = new System.Drawing.Point(0, 202);
+            this.lblShortcut.Name = "lblShortcut";
+            this.lblShortcut.Size = new System.Drawing.Size(796, 125);
+            this.lblShortcut.TabIndex = 2;
+            this.lblShortcut.Text = "A shortcut to resume";
+            this.lblShortcut.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // OverlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 327);
+            this.Controls.Add(this.lblShortcut);
             this.Controls.Add(this.lblCountdown);
             this.Name = "OverlayForm";
             this.Text = "OverlayForm";
@@ -67,5 +80,6 @@
 
         private System.Windows.Forms.Label lblCountdown;
         private System.Windows.Forms.Timer tmrCountdown;
+        private System.Windows.Forms.Label lblShortcut;
     }
 }
