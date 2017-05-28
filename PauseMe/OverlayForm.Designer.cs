@@ -43,7 +43,7 @@
             this.lblCountdown.TabIndex = 1;
             this.lblCountdown.Text = "Countdown Timer";
             this.lblCountdown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCountdown.DoubleClick += new System.EventHandler(this.lblCountdown_DoubleClick);
+            this.lblCountdown.Click += new System.EventHandler(this.lblCountdown_Click);
 
             // 
             // tmrCountdown
