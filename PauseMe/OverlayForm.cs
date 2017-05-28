@@ -45,7 +45,7 @@ namespace PauseMe
             }
         }
 
-        private void lblCountdown_Click(object sender, EventArgs e)
+        private void lblCountdown_DoubleClick(object sender, EventArgs e)
         {
             this.Close();
         }
